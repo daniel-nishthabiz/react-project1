@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 // Using npm module doesnt seem to work, not sure why
 // Manually added css in head too
-import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@8/src/sweetalert2.js";
+// import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@8/src/sweetalert2.js";
 
 const ContactForm = () => {
     const [email, setEmail] = useState("");
@@ -25,7 +25,8 @@ const ContactForm = () => {
             params.append("phone", phone);
             params.append("message", message);
             axios.post("http://localhost/project2/server/contact.php", params);
-            Swal.fire("Success!", "Thank you for your message. We will contact you via email soon!", "success");
+            alert("Thank you for your message. We will contact you via email soon!");
+            // Swal.fire("Success!", "Thank you for your message. We will contact you via email soon!", "success");
         }
 
         setValidated(true);
