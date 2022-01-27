@@ -1,5 +1,6 @@
 {
-  "name": "project2",
+  "name": "react-project1",
+  "main": "src/index.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
