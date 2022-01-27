@@ -1,6 +1,6 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 // Using npm module doesnt seem to work, not sure why
 // Manually added css in head too
@@ -13,9 +13,6 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
     const [validated, setValidated] = useState(false);
 
-    useEffect(() => {
-        console.log("Message updated", message);
-    }, [message]);
     const handleSubmit = (e) => {
         const form = e.currentTarget;
         e.preventDefault();
@@ -28,10 +25,7 @@ const ContactForm = () => {
             params.append("phone", phone);
             params.append("message", message);
             axios.post("http://localhost/project2/server/contact.php", params);
-            Swal.fire({
-                title: "Thank you for your message. We will contact you via email soon!",
-                icon: "success",
-            });
+            Swal.fire("Success!", "Thank you for your message. We will contact you via email soon!", "success");
         }
 
         setValidated(true);

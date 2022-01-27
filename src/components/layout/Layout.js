@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
     }, [navRef?.current?.clientHeight]);
 
     useEffect(() => {
-        console.log("marqueeRef.current", marqueeRef.current);
         if (marqueeRef?.current?.clientHeight) {
             setMarqueeHeight(marqueeRef?.current?.clientHeight);
         }

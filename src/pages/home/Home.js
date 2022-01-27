@@ -13,7 +13,7 @@ function Home() {
         <div className={styles.home}>
             <div className={styles.banner}>
                 <div className={styles.bannerWrapper}>
-                    <Image className={styles.bannerImg} s src={banner} />
+                    <Image className={styles.bannerImg} src={banner} />
                 </div>
             </div>
             <Wrapper>

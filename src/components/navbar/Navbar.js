@@ -9,7 +9,6 @@ import { forwardRef } from "react";
 
 const NavLink = ({ children, href, ...rest }) => {
     const { pathname } = useLocation();
-    console.log(pathname);
     return (
         <LinkContainer to={href} className={href === pathname ? styles.active : ""}>
             <Nav.Link className={styles.navlink} {...rest}>
