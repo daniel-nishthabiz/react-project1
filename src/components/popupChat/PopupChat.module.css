@@ -1,0 +1,72 @@
+/* :root {
+    --popup-radius: 20px;
+} */
+
+.popup {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    bottom: 2rem;
+    right: 2rem;
+    overflow: hidden;
+}
+
+.popupBtn {
+    position: relative;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #098da8;
+    z-index: 100;
+    min-width: fit-content;
+    margin-left: auto;
+    margin-top: 0.5rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.popupBtn:hover {
+    cursor: pointer;
+}
+
+.popupMenu {
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--bs-dark);
+    display: none;
+    z-index: 99;
+    max-width: 30vw;
+    min-width: fit-content;
+    padding: 1rem;
+}
+
+.popupSendBtn {
+    width: 100%;
+}
+
+.popupBtn:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.popupChat {
+    display: flex;
+    flex-direction: column;
+}
+
+.popupChatField {
+    margin-bottom: 0.4rem;
+}
+
+.popupBtn::selection {
+    background: transparent;
+}

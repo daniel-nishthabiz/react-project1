@@ -1,0 +1,17 @@
+.form {
+    width: 50vw;
+    margin: 2rem;
+    padding: 2rem !important;
+    background-color: var(--background);
+    border-radius: 5px;
+}
+
+.contact {
+    justify-items: center;
+    align-items: center;
+}
+
+.title,
+.heading {
+    text-align: center;
+}

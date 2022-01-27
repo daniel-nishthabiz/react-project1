@@ -1,0 +1,10 @@
+.card {
+    width: 18rem;
+    flex: 1 0 auto;
+    margin: 1rem;
+    background-color: var(--background) !important;
+}
+
+.img {
+    max-height: 10rem;
+}

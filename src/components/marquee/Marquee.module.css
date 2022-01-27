@@ -1,0 +1,21 @@
+.marquee {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: var(--primary);
+    /* z-index: -2; */
+}
+
+.marqueeText {
+    z-index: 1;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    /* right: -10000px; */
+    margin-bottom: 0;
+    padding: 0.5em 0;
+    transition: transform 10s linear;
+}

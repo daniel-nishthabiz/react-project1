@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center;
+    align-items: center; */
+}
+.wrapper > *:not(.noPadding) {
+    padding: 0 7%;
+}

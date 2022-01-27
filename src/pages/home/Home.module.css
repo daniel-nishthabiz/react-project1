@@ -1,0 +1,35 @@
+.infoCards {
+    display: flex;
+    align-items: stretch;
+    margin: 2rem 0;
+    flex-wrap: wrap !important;
+}
+
+.banner {
+    margin: 0 -2rem;
+    top: 0;
+    position: relative;
+}
+
+.banner,
+.bannerImg {
+    /* Calc fixes overflow issues */
+    width: calc(100% + 2rem);
+    height: 40vh;
+    overflow: hidden;
+    object-position: top;
+}
+
+/* .bannerWrapper {
+} */
+
+.intro {
+    background-color: var(--background);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem !important;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+}
