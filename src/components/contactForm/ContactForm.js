@@ -40,12 +40,12 @@ const ContactForm = () => {
                 <Form.Control.Feedback type="invalid">Please enter your email address.</Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="name">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>First name</Form.Label>
                 <Form.Control required placeholder="Enter first name" value={name} onChange={(e) => setName(e.target.value)} />
                 <Form.Control.Feedback type="invalid">Please enter first name.</Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="phone">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Phone number</Form.Label>
                 <Form.Control required placeholder="Enter phone number" value={phone} onChange={(e) => setPhone(e.target.value)} />
                 <Form.Control.Feedback type="invalid">Please enter your phone number.</Form.Control.Feedback>
             </Form.Group>
