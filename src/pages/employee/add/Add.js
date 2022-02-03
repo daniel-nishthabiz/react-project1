@@ -1,6 +1,5 @@
 import Wrapper from "../../../components/wrapper/Wrapper";
-import styles from "./addEmployee.module.css";
-// import ContactForm from "../../components/contactForm/ContactForm";
+import styles from "./Add.module.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useEffect, useState } from "react";
@@ -21,6 +20,7 @@ const AddEmployee = () => {
         try {
             const res = await axios.get("http://localhost/project2/server/jobs.php");
             if (res && res.data) {
+                console.log(res.data);
                 setJobroles(res.data);
                 setLoaded(true);
             } else {
@@ -55,7 +55,6 @@ const AddEmployee = () => {
                 .catch((e) => {
                     alert("An error occured while adding new employee", e);
                 });
-            // Swal.fire("Success!", "Thank you for your message. We will contact you via email soon!", "success");
         }
 
         setValidated(true);
@@ -83,11 +82,11 @@ const AddEmployee = () => {
                         <Form.Control.Feedback type="invalid">Please enter the starting date.</Form.Control.Feedback>
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="phone">
+                    <Form.Group className="mb-3" controlId="ending_date">
                         <Form.Label>Ending date</Form.Label>
                         <Form.Control
                             required
-                            placeholder="Enter phone number"
+                            placeholder="Enter ending date"
                             value={endDate}
                             onChange={(e) => setEndDate(e.target.value)}
                         />
@@ -97,7 +96,7 @@ const AddEmployee = () => {
                     <Form.Group className="mb-3">
                         <Form.Label>Job role</Form.Label>
                         <Form.Select onChange={(e) => setJobId(e.target.value)}>
-                            {jobRoles &&
+                            {jobRoles != null &&
                                 jobRoles.map((role, key) => {
                                     return (
                                         <option key={key} value={role.job_id}>
