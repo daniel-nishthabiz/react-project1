@@ -3,7 +3,7 @@
   "main": "src/index.js",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://daniel-nishthabiz.github.io/react-project1",
+  "homepage": "https://daniel-nishthabiz.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
