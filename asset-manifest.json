@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-project1/static/css/main.9c99661c.css",
-    "main.js": "/react-project1/static/js/main.7b392107.js",
-    "static/media/software-development.jpg": "/react-project1/static/media/software-development.66a7b5ed04f74a34f993.jpg",
-    "static/media/banner.jpg": "/react-project1/static/media/banner.79bb897df6ce682f182d.jpg",
-    "static/media/Top-6-Software-Development-Methodologies.jpg": "/react-project1/static/media/Top-6-Software-Development-Methodologies.d6e46cc6b5c48e5c4ce4.jpg",
-    "static/media/logo.png": "/react-project1/static/media/logo.b351f36e0a9144146e79.png",
-    "static/media/future-software-development.png": "/react-project1/static/media/future-software-development.695658314d9f7a0b7e35.png",
-    "index.html": "/react-project1/index.html",
-    "main.9c99661c.css.map": "/react-project1/static/css/main.9c99661c.css.map",
-    "main.7b392107.js.map": "/react-project1/static/js/main.7b392107.js.map"
+    "main.css": "/static/css/main.9c99661c.css",
+    "main.js": "/static/js/main.fb8eb526.js",
+    "static/media/software-development.jpg": "/static/media/software-development.66a7b5ed04f74a34f993.jpg",
+    "static/media/banner.jpg": "/static/media/banner.79bb897df6ce682f182d.jpg",
+    "static/media/Top-6-Software-Development-Methodologies.jpg": "/static/media/Top-6-Software-Development-Methodologies.d6e46cc6b5c48e5c4ce4.jpg",
+    "static/media/logo.png": "/static/media/logo.b351f36e0a9144146e79.png",
+    "static/media/future-software-development.png": "/static/media/future-software-development.695658314d9f7a0b7e35.png",
+    "index.html": "/index.html",
+    "main.9c99661c.css.map": "/static/css/main.9c99661c.css.map",
+    "main.fb8eb526.js.map": "/static/js/main.fb8eb526.js.map"
   },
   "entrypoints": [
     "static/css/main.9c99661c.css",
-    "static/js/main.7b392107.js"
+    "static/js/main.fb8eb526.js"
   ]
 }
